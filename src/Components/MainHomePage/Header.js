@@ -34,6 +34,7 @@ class Header extends Component {
        >
            <Link to='/login' className='navlist'><NavDropdown.Item href="#action/3.1">Login as Owner</NavDropdown.Item></Link>
            <Link to='/receptionist' className='navlist'><NavDropdown.Item href="#action/3.2">Login as Receptionist</NavDropdown.Item></Link>
+           <Link to='/manager' className='navlist'><NavDropdown.Item href="#action/3.3">Login as Manager</NavDropdown.Item></Link>
        </NavDropdown>
      <NavDropdown
          id="nav-dropdown-light-example"

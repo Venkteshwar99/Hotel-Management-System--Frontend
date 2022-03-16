@@ -21,6 +21,11 @@ import Hero from './Components/MainHomePage/Hero';
 import ReceptionistHomePage from './Components/Receptionist/HomePage/ReceptionistHomePage';
 import Header from './Components/MainHomePage/Header';
 import Success from './Components/Receptionist/Reservation/Success';
+import ManagerHomePage from './Components/Manager/HomePage/ManagerHomePage';
+import ManagerRoomList from './Components/Manager/Room/ManagerRoomList';
+import ManagerStaffList from './Components/Manager/Staff/ManagerStaffList';
+import InventoryList from './Components/Manager/Inventory/InventoryList';
+import AddInventory from './Components/Manager/Inventory/AddInventory';
 
 
 
@@ -60,6 +65,15 @@ import Success from './Components/Receptionist/Reservation/Success';
                         <Route exact path = "/add-reservation" component = {AddReservation}></Route>
 
                      
+                     {/*Manager Home Page */}
+                     <Route path="/manager" exact component={ManagerHomePage}/>
+                      <Route exact path="/manager/room" component={ManagerRoomList} />                    
+                      <Route exact path = "/manager/staff" component = {ManagerStaffList}></Route>
+                      <Route exact path = "/manager/inventory" component = {InventoryList}></Route>
+                      <Route exact path = "/add-inventory" component = {AddInventory}></Route>
+
+
+
 
                      {/* Login Page*/}
                      <Route exact path="/login-receptionist" component={LoginReceptionist} />
